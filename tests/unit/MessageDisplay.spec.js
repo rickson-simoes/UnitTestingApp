@@ -11,7 +11,7 @@ beforeEach(() => {
 
 describe("MessageDisplay", () => {
   it("Should call the api getMessage and show the data", async () => {
-    const mockMessage = "Hello from the DB";
+    const mockMessage = "Hello from the DB!";
     getMessage.mockResolvedValueOnce({ text: mockMessage });
 
     const wrapper = mount(MessageDisplay);
